@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friday Game Time!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: #fff;
+      font-family: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(30,0,50,0.32);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .container {
+      background: rgba(30, 0, 50, 0.32);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px #2d003655, 0 2px 8px #fff3;
+      backdrop-filter: blur(2.5px);
+      padding: 40px 32px 32px 32px;
+      max-width: 540px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 2.7rem;
+      letter-spacing: 6px;
+      color: #fff;
+      font-family: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+      text-shadow:
+        0 0 12px #fff,
+        0 0 32px #fff,
+        0 0 48px #ff5e62,
+        0 0 80px #ff5e62,
+        0 0 120px #ffb347,
+        0 0 160px #ffb347,
+        0 0 200px #fff8,
+        0 0 8px #000b;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      font-family: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+      color: #fff;
+      margin-bottom: 18px;
+      text-shadow: 0 0 8px #ffb347, 0 0 16px #fff8;
+    }
+    .instructions {
+      background: rgba(0,0,0,0.25);
+      border-radius: 12px;
+      padding: 18px 18px 10px 18px;
+      margin-bottom: 24px;
+      font-size: 1.1rem;
+      font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+      color: #fff;
+      box-shadow: 0 2px 12px #a259e655, 0 1px 4px #fff3;
+      text-align: left;
+      line-height: 1.7;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .consequence {
+      margin-top: 18px;
+      font-size: 1.15rem;
+      color: #ffb347;
+      font-family: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+      text-shadow: 0 0 8px #fff8, 0 0 16px #ffb347;
+      text-align: center;
+    }
+    .start-btn {
+      margin-top: 32px;
+      font-size: 1.4rem;
+      font-family: 'Bungee', 'Arial Black', 'Impact', sans-serif;
+      padding: 16px 48px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(90deg, #a259e6 0%, #ffb347 100%);
+      color: #fff;
+      box-shadow: 0 4px 16px #a259e655, 0 0 8px #fff8;
+      cursor: pointer;
+      text-shadow: 0 2px 8px #fff8;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .start-btn:hover {
+      background: linear-gradient(90deg, #ffb347 0%, #a259e6 100%);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <video class="bg-video" src="./Resources/Spinning Pink Colorful  Disco Ball Vj Loop - Disco Ball Animation Party Background - Art Of Chill - Visual Loops (1080p, h264).mp4" autoplay loop muted playsinline></video>
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="main-title">Friday Game Time!</div>
+    <div class="main-title" style="font-size:2.2rem; margin-bottom:0;">GUESS THE TUNE!</div>
+    <div class="subtitle">Can you name that song?</div>
+    <div class="instructions">
+      <b>Game Instructions:</b><br><br>
+      A song (instrumental only) will be played.<br><br>
+      Players must guess the song title.<br><br>
+      Submit your answer via PM within 20 seconds.<br><br>
+      1 point for each correct answer.<br><br>
+      Game ends once a player reaches 10 points.<br><br>
+      The player with the lowest score loses.
+    </div>
+    <div class="consequence">
+      🎤 Consequence for the Loser:<br>
+      Score the fewest points? Congrats, you’re tonight’s featured artist. Sing 1 full karaoke song performance!
+    </div>
+    <button class="start-btn" onclick="window.location.href='landing_v2.html'">Start Game</button>
+  </div>
+</body>
+</html> 
